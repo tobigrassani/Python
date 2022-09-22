@@ -15,3 +15,8 @@ print("x is string:",x)
 print("y is integrer:",y)
 print("z is float:",z,"and adding",y,"=",z+y)
 
+# Get the data type of a variable with type()
+print("x data type:", type(x))
+print("y data type:", type(y))
+print("z data type:", type(z))
+
