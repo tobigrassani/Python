@@ -31,9 +31,11 @@ x = 5   # This is a global variable
 
 def myfunc():       # Defining a function called myfunc()
     x = 10  # This is an inside variable
-    print("This is the inside variable x value:", x)
+    print("This is an inside variable x value:", x)
 
 
 myfunc()    # Calling myfunc()
 print("This is the global variable x value:", x)
 
+
+# End of the chapter
