@@ -20,3 +20,20 @@ print("x data type:", type(x))
 print("y data type:", type(y))
 print("z data type:", type(z))
 
+# Python allows us to assign values to multiple variables in one line
+a, b, c = 1, 2, 3
+d, e, f = 4, 5, 6
+print(a, b, c, d, e, f)
+
+# Global variables are usefull for any function in the project.
+x = 5   # This is a global variable
+
+
+def myfunc():       # Defining a function called myfunc()
+    x = 10  # This is an inside variable
+    print("This is the inside variable x value:", x)
+
+
+myfunc()    # Calling myfunc()
+print("This is the global variable x value:", x)
+
