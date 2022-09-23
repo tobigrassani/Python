@@ -33,8 +33,8 @@ print(a, b)
 # Split & String Concatenation
 a = a.split(",")    # Splits the string with the value between commas
 print(a)
-print(a[0] + a[1], "Here printed separetly")  # Prints the two parts of the tuple
-a = a[0] + a[1]     # Concatenating the tuple parts
+print(a[0] + a[1], "Here printed separetly")  # Prints the two parts of the list
+a = a[0] + a[1]     # Concatenating the list parts
 print(a, "Here we already concatenated")
 
 # Format
@@ -45,7 +45,7 @@ age = 24
 txt = "My name is Tobias, and I am {} actually"
 print(txt.format(age))
 
-age = [24, 1997, 30, 12]    # Test with tuples
+age = [24, 1997, 30, 12]    # Test with a list
 txt = "My name is Tobias, I was born the {} of the month number {} in {}. Actually, I am {}"
 print(txt.format(age[2], age[3], age[1], age[0]))
 
