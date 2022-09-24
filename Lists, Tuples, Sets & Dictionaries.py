@@ -23,7 +23,10 @@ if x in thislist:
 else:
     print(x, "is not in thislist")
 """
-
+print("Thislist is range:", thislist.__len__())
+thislist.insert(2, 100)      # Insert a new index in the position/index number 2. The new range is range+1
+print(thislist)
+print("Thislist new is range:", thislist.__len__())
 
 
 
