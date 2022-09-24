@@ -15,6 +15,15 @@ print(thislist[0] + thislist[1])      # 3
 print(thislist[1:3])                  # [2, 3] ( index 1 included, index 3 not includes )
 
 
+"""x = int(input("Fill with a number: "))
+print ("The number inserted is:5",x)
+
+if x in thislist:
+    print(x, "Is in thislist")
+else:
+    print(x, "is not in thislist")
+"""
+
 
 
 # TUPLES
