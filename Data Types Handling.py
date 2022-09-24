@@ -50,7 +50,7 @@ txt = "My name is Tobias, I was born the {} of the month number {} in {}. Actual
 print(txt.format(age[2], age[3], age[1], age[0]))
 
 
-
+print(isinstance(txt,str))  #Print > If txt is string: True else False
 
 
 
