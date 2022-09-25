@@ -41,17 +41,19 @@ print(thislist)
 thislist.pop(1)     # Pops (removes) the index "1" (position 2) of the list
 print(thislist)
 thislist.clear()    # Cleans all items of the list
+print(thislist.__len__())
+for i in range(5):
+    thislist.append(i)
+    i = i + 1
+    print(thislist[i-1])    
 print(thislist)
 
+for i in range(len(thislist)):
+    thislist[i] = i*i
+print(thislist)
 
-
-
-
-
-
-
-
-
+thislist = ["apple", "banana", "cherry"]
+[print(x) for x in thislist]
 # TUPLES
 
 # SETS
