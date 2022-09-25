@@ -40,6 +40,8 @@ thislist.remove("A")    # Removes the "A" element on the list
 print(thislist)
 thislist.pop(1)     # Pops (removes) the index "1" (position 2) of the list
 print(thislist)
+thislist.clear()    # Cleans all items of the list
+print(thislist)
 
 
 
