@@ -45,7 +45,7 @@ print(thislist.__len__())
 for i in range(5):
     thislist.append(i)
     i = i + 1
-    print(thislist[i-1])    
+    print(thislist[i-1])
 print(thislist)
 
 for i in range(len(thislist)):
@@ -54,6 +54,12 @@ print(thislist)
 
 thislist = ["apple", "banana", "cherry"]
 [print(x) for x in thislist]
+
+newlist = [x.upper() for x in thislist]     # LIST COMPREHENSION
+[print(x) for x in newlist]
+newlist = [x if x != "apple" else "orange" for x in thislist]
+[print(x) for x in newlist]
+
 # TUPLES
 
 # SETS
