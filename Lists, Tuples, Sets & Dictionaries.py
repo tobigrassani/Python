@@ -80,3 +80,36 @@ age = dictbrick.get("age")
 print(age)                  # 24
 age = dictbrick["age"]
 print(age)                  # 24
+print(dictbrick.keys())     # dict_keys(['name', 'lastName', 'bornDate', 'age'])
+x = dictbrick.keys()        # returns dict's keys
+print(x)
+dictbrick["nacionality"] = "Argentina"
+print(x)
+v = dictbrick.values()      # returns dict's values
+print(v)
+
+# To get all key:value pairs use > dict.items()
+i = dictbrick.items()
+print(i)
+
+# Nested dictionaries are dictionaries inside dictionaries
+child1 = {
+  "name" : "Emil",
+  "year" : 2004
+}
+child2 = {
+  "name" : "Tobias",
+  "year" : 2007
+}
+child3 = {
+  "name" : "Linus",
+  "year" : 2011
+}
+
+myfamily = {
+  "child1" : child1,
+  "child2" : child2,
+  "child3" : child3
+}
+print(myfamily.items())
+
