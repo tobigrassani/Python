@@ -27,6 +27,18 @@ print("Thislist is range:", thislist.__len__())
 thislist.insert(2, 100)      # Insert a new index in the position/index number 2. The new range is range+1
 print(thislist)
 print("Thislist new is range:", thislist.__len__())
+thislist.append("New item on list")     # Add new item at the end of the list, and also range is +1
+thislist.extend(thislist)   # Append another list to a list, so the new range of the list appended is = range(thislist)
+#   + range(anotherlist)
+print(thislist)
+
+thislist = [1, 2, 3]
+thistuple = ("A", "B", "C")
+thislist.extend(thistuple)
+print(thislist)
+
+
+
 
 
 
