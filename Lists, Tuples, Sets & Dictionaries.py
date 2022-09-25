@@ -36,6 +36,10 @@ thislist = [1, 2, 3]
 thistuple = ("A", "B", "C")
 thislist.extend(thistuple)
 print(thislist)
+thislist.remove("A")    # Removes the "A" element on the list
+print(thislist)
+thislist.pop(1)     # Pops (removes) the index "1" (position 2) of the list
+print(thislist)
 
 
 
