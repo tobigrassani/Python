@@ -64,4 +64,16 @@ newlist = [x if x != "apple" else "orange" for x in thislist]
 
 # SETS
 
-# DICTIONARIES
+# DICTIONARIES : are used to store data in key:value pairs
+# A dictionary is a collection which is ordered, changeable and do not allow duplicates.
+# Example:
+dictbrick = {"name": "Enrique",
+        "lastName": "Havenstein",
+        "bornDate": "14/4/1998",
+        "age": 24
+        }
+print(dictbrick)            # {'name': 'Enrique', 'lastName': 'Havenstein', 'bornDate': '14/4/1998', 'age': 24}
+print(dictbrick["age"])     # 24
+print(len(dictbrick))       # 4
+print(type(dictbrick))      # <class 'dict'>
+
