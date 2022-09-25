@@ -76,4 +76,7 @@ print(dictbrick)            # {'name': 'Enrique', 'lastName': 'Havenstein', 'bor
 print(dictbrick["age"])     # 24
 print(len(dictbrick))       # 4
 print(type(dictbrick))      # <class 'dict'>
-
+age = dictbrick.get("age")
+print(age)                  # 24
+age = dictbrick["age"]
+print(age)                  # 24
