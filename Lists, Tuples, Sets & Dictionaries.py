@@ -90,9 +90,10 @@ while i <= len(thistuple):
 
 twotimesfruits = fruits * 2
 print(twotimesfruits)
-for x in twotimesfruits:
-    print("item", x, ":", twotimesfruits)
-
+i = 0
+while i < len(twotimesfruits):
+    print("Item", i, ":", twotimesfruits[i])
+    i = i + 1
 
 # SETS
 
