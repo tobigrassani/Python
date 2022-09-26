@@ -73,6 +73,17 @@ if x in thistuple:
 else:
     print("No!", x, "is not in thistuple")
 
+fruits = ("banana", "apple", "kiwi", "mango", "blueberry")
+
+(yellow, red, green, orange, blue) = fruits     # Unpacking a tuple into variables
+
+print(yellow, red, green, orange, blue)
+
+for x in fruits:
+    print(x)
+
+
+
 
 # SETS
 
