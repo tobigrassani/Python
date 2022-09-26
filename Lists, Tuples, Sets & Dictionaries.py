@@ -62,6 +62,13 @@ newlist = [x if x != "apple" else "orange" for x in thislist]
 
 # TUPLES
 
+thistuple = ("apple", "banana", "kiwi", "mango")
+print("thistuple length: ", len(thistuple))
+print("thistuple class: ", thistuple.__class__)
+x = len(thistuple)-1        #this is the last item of the tuple
+print(thistuple[x])
+
+
 # SETS
 
 # DICTIONARIES : are used to store data in key:value pairs
