@@ -82,7 +82,16 @@ print(yellow, red, green, orange, blue)
 for x in fruits:
     print(x)
 
+fruits = ("banana", "apple", "kiwi", "mango", "blueberry")
+i = 0
+while i <= len(thistuple):
+    print(fruits[i])
+    i = i + 1
 
+twotimesfruits = fruits * 2
+print(twotimesfruits)
+for x in twotimesfruits:
+    print("item", x, ":", twotimesfruits)
 
 
 # SETS
