@@ -97,8 +97,6 @@ while i < len(twotimesfruits):
 x = twotimesfruits.count("banana")
 print(x)
 
-# SETS
-
 # DICTIONARIES : are used to store data in key:value pairs
 # A dictionary is a collection which is ordered, changeable and do not allow duplicates.
 # Example:
