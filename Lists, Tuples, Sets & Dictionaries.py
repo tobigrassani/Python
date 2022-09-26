@@ -94,6 +94,8 @@ i = 0
 while i < len(twotimesfruits):
     print("Item", i, ":", twotimesfruits[i])
     i = i + 1
+x = twotimesfruits.count("banana")
+print(x)
 
 # SETS
 
