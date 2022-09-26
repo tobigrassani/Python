@@ -67,6 +67,11 @@ print("thistuple length: ", len(thistuple))
 print("thistuple class: ", thistuple.__class__)
 x = len(thistuple)-1        #this is the last item of the tuple
 print(thistuple[x])
+x = "banana"
+if x in thistuple:
+    print("Yes!", x, " is in thistuple")
+else:
+    print("No!", x, "is not in thistuple")
 
 
 # SETS
