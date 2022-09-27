@@ -46,7 +46,7 @@ if x > 10:
 if x > 20:
     print("and also above 20!")
 else:
-    print("but not above 20.")
+    print("but not above 20 o algo asi che.")
 
 
 if x > 100000:
