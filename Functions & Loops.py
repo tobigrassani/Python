@@ -38,7 +38,7 @@ else:
     print("but not above 20.")
 
 
-    #duplicadoooo por dos
+    #duplicad
 
 
 if x > 10:
