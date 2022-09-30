@@ -83,6 +83,18 @@ for x in fruits:
 for x in "banana":      # strings are iterable with for loops
   print(x)
 
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+    if x == "banana":
+        break           # stops iterating with banana index
+    print(x)
+
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+    if x == "banana":
+        continue        # jumps the banana index
+    print(x)
+
 
 
 
