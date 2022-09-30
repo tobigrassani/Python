@@ -22,9 +22,12 @@ b = 3301
 print("A") if a > b else print("=") if a == b else print("B")
 """
 STATEMENT 1:
+
 print("A") if a > b else print("=") if a == b else print("B")
+
 Its equal to
 STATEMENT 2:
+
 if a > b
     print("A")
 else
