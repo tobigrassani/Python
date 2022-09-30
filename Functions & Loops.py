@@ -76,6 +76,12 @@ while i < 5:
         continue
     print(i)
 
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+
+for x in "banana":      # strings are iterable with for loops
+  print(x)
 
 
 
