@@ -151,6 +151,15 @@ my_function()
 my_function("Brazil")
 
 
+def multiplicate(a=2,b=2):
+    return a * b
+
+print(multiplicate(4,2))
+print(multiplicate(1,1))
+print(multiplicate())
+
+
+
 
 
 
