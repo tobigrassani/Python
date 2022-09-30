@@ -136,14 +136,9 @@ for x in names:
     i += 1
 print(i, "names where printed")
 
-
-def arbfunction(*people):   #
-
-    def my_function(*kids):
-        print("The youngest child is " + kids[1])
-
-    my_function("Emil", "Tobias", "Linus")
-
+def arbitraryfunc(*people):   # pass data while indexing >>>> arbitrary arguments
+    print("The selected person is", people[2])
+arbitraryfunc("enrique", "marcos", "juan", "matias", "delin")
 
 
 
