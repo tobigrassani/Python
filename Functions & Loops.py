@@ -141,6 +141,14 @@ def arbitraryfunc(*people):   # pass data while indexing >>>> arbitrary argument
 arbitraryfunc("enrique", "marcos", "juan", "matias", "delin")
 
 
+def my_function(country="Norway"):     # setting default value if no values are passed while calling func
+    print("I am from " + country)
+
+
+my_function("Sweden")
+my_function("India")
+my_function()
+my_function("Brazil")
 
 
 
