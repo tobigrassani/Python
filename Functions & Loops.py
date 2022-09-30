@@ -1,4 +1,4 @@
-#Conditions and Statements
+#>>>>>>> Conditions and Statements
 """
 Equals: a == b
 Not Equals: a != b
@@ -53,6 +53,28 @@ if x > 20:
 else:
     print("but not above 20.")
 
+#>>>>>>> LOOPS
+i = 1
+while i < 10:
+    print(i)
+    i += 1
+
+i = 0
+while i < 5:
+    i += 1
+    if i == 3:
+        continue    # jumps to the next iteration without ending the actual one
+    print(i)
+
+i = 0
+j = 0
+while i < 5:
+    i += 1
+    j += 1
+    if i == 3:
+        print(j , "is j")
+        continue
+    print(i)
 
 
 
