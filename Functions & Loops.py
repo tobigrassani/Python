@@ -95,6 +95,48 @@ for x in fruits:
         continue        # jumps the banana index
     print(x)
 
+#>>>>>>>> FUNCTIONS
+
+
+def myname(name):
+    print(name + " is human")
+
+
+myname("tobias")
+myname("alex")
+
+names = ["enrique", "marcos", "juan", "matias", "delin"]
+for x in names:
+    myname(x)
+
+
+for x in names:
+    if x == "juan":
+        continue
+    myname(x)
+
+for x in names:
+    if x == "juan":
+        break
+    myname(x)
+
+i = 0
+for x in names:
+    if x == "juan":
+        break
+    myname(x)
+    i += 1
+print(i, "names where printed")
+
+i = 0
+for x in names:
+    if x == "juan":
+        continue
+    myname(x)
+    i += 1
+print(i, "names where printed")
+
+
 
 
 
