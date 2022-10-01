@@ -37,3 +37,16 @@ class Person1:
 p1 = Person1("Carlos", 24)
 p1.introPerson()
 
+
+class Dog:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def intro(self):
+        print("Dog's name:", self.name)
+        print("Age:", self.age)
+
+
+d1 = Dog("Killy", 2)
+d1.intro()
