@@ -21,4 +21,19 @@ p1 = Person("Agustin", 24)
 print("Person name:", p1.name)
 print("age:", p1.age)
 
+print(p1)
+
+
+class Person1:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def introPerson(self):
+        print("Hello, my name is", self.name)
+        print("and I am", self.age, ", nice to meet u")
+
+
+p1 = Person1("Carlos", 24)
+p1.introPerson()
 
