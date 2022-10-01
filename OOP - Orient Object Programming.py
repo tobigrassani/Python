@@ -50,3 +50,11 @@ class Dog:
 
 d1 = Dog("Killy", 2)
 d1.intro()
+
+
+class Puppy(Dog):
+    pass
+
+
+x = Puppy("child1", 0.5)
+x.intro()
