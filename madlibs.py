@@ -1,3 +1,5 @@
 youtuber = "el pendejito pendejin"
 
-print(f"suscribe to {youtuber}")
+madlib = f"Suscribre to {youtuber}"
+
+print(madlib)
