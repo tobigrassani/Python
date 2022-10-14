@@ -1,9 +1,11 @@
-n = int(input("Insert list size: "))
+n = int(input("Insert matrix size: "))
 A = []
 
 for i in range(0, n):
-    x = int(input(f"Insert the {i+1}th element: "))
-    A.append(x)
+    row = []
+    for j in range(0,n):
+        row.append(int(input(f"Insert the [{i}][{j}]: ")))
+    A.append(row)
 
 print("Matrix A: \n", A, "\nSize: ", len(A))
 
