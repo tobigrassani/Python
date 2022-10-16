@@ -27,32 +27,36 @@ def exitmenu():
     return x
 
 
-option = True
-total = 0
-while option:
-    print("---------- ATM MENU ----------")
-    print("""
-    Hello! Welcome to ATM
-    Choose an option from below:
-    1. Check Balance
-    2. Deposit
-    3. Withdraw
-    0. Exit
-    """)
-    option = int(input("Insert option: "))
-    while option < 0 or option > 4:
-        option = int(input("Insert a valid option: "))
-    if option == 1:
-        print(f"\nYour balance is ${total} dollars")
-        option = exitmenu()
-    elif option == 2:
-        total = deposit(total)
-        option = exitmenu()
-    elif option == 3:
-        total = withdraw(total)
-        option = exitmenu()
-    elif option == 0:
-        break
-    else:
-        print("Choose a correct option please")
+def main():
+    option = True
+    total = 0
+    while option:
+        print("---------- ATM MENU ----------")
+        print("""
+        Hello! Welcome to ATM
+        Choose an option from below:
+        1. Check Balance
+        2. Deposit
+        3. Withdraw
+        0. Exit
+        """)
+        option = int(input("Insert option: "))
+        while option < 0 or option > 4:
+            option = int(input("Insert a valid option: "))
+        if option == 1:
+            print(f"\nYour balance is ${total} dollars")
+            option = exitmenu()
+        elif option == 2:
+            total = deposit(total)
+            option = exitmenu()
+        elif option == 3:
+            total = withdraw(total)
+            option = exitmenu()
+        elif option == 0:
+            break
+        else:
+            print("Choose a correct option please")
+
+
+main()
 
