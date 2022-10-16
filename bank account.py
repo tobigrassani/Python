@@ -4,11 +4,10 @@ def withdraw(t):
     w = int(input("Insert amount to withdraw: "))
     if (t - w) > 0:
         t -= w
+        print(f"Withdrawal amount: ${w} \nNew Total: ${t}")
     else:
-        print("You don't have enough balance.")
+        print("\nYou don't have enough balance.")
         print("Available balance: $", t)
-
-    print(f"Withdrawal amount: ${w} \nNew Total: ${t}")
     return t
 
 
@@ -39,7 +38,7 @@ def main():
         print("---------- ATM MENU ----------")
         print("""
         Hello! Welcome to ATM
-        Choose an option from below:
+        Choose an option from below:1
         1. Check Balance
         2. Deposit
         3. Withdraw
