@@ -70,6 +70,7 @@ def system():
             total = withdraw(total)
             option = exitmenu()
         elif option == 0:
+            print("---------- BYE BYE! ----------")
             break
         else:
             print("Choose a correct option please")
