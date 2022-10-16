@@ -2,7 +2,12 @@ def withdraw(t):
     print("---------- WITHDRAW ----------")
     print("Available balance: $", t)
     w = int(input("Insert amount to withdraw: "))
-    t -= w
+    if (t - w) > 0:
+        t -= w
+    else:
+        print("You don't have enough balance.")
+        print("Available balance: $", t)
+
     print(f"Withdrawal amount: ${w} \nNew Total: ${t}")
     return t
 
