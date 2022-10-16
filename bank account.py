@@ -26,14 +26,27 @@ def exitmenu():
     1. Back to Menu
     0. Exit""")
     x = int(input("Insert option: "))
-    while x != (0 or 1):
+    while x != 1:
+        if x == 0:
+            break
         x = int(input("Insert a valid option: "))
     return x
 
 
-def main():
-    option = True
+def login():
+    user = input("Login \nUser: ")
+    password = input("Password: ")
+    access = user + password
+    if (user + password) == access:
+        print("Login successful")
+        system()
+    else:
+        print("Login denied")
+
+
+def system():
     total = 0
+    option = True
     while option:
         print("---------- ATM MENU ----------")
         print("""
@@ -60,6 +73,10 @@ def main():
             break
         else:
             print("Choose a correct option please")
+
+
+def main():
+    login()
 
 
 main()
