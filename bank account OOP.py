@@ -17,7 +17,9 @@ class Room:
     def add_person(self, person):
         if (len(self.people) < self.capacity) & (self.access == person.gender):     # filtering by capacity and gender
             self.people.append(person)
+            print(f"{person.name} added to {room1.name} successful")
             return True
+        print(f"{person.name} was denied to add to {room1.name}")
         return False
 
 
