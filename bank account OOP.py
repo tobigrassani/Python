@@ -1,5 +1,5 @@
 class Person:
-    def name(self):
+    def print(self):
         print("Persons name is printed")
 
 
