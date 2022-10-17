@@ -3,32 +3,39 @@ class Person:
         self.name = name
         self.gender = gender
 
-    def set_name(self, name):
-        self.name = name
-
-    def set_gender(self, gender):
-        self.gender = gender
-
-    def get_name(self):
-        return self.name
-
     def get_gender(self):
         return self.gender
 
 
-p = Person("Alissa", "Female")
-print(f"Hello my name is {p.get_name().upper()}")
-print(f"and beeing {p.get_gender().lower()} is the best in world.")
+class Room:
+    def __init__(self, name, access, capacity):
+        self.name = name
+        self.access = access
+        self.capacity = capacity
+        self.people = []
 
+    def add_person(self, person):
+        if (len(self.people) < self.capacity) & (self.access == person.gender):     # filtering by capacity and gender
+            self.people.append(person)
+            return True
+        return False
+
+
+p1 = Person("Alissa", "Female")
 p2 = Person("Michael", "Male")
-print(f"Hello my name is {p2.get_name().upper()}")
-print(f"and beeing {p2.get_gender().lower()} is the best in world.")
+p3 = Person("Kelly", "Female")
+p4 = Person("Sally", "Female")
 
-name = input("Name: ")
-gender = input("Gender: ")
-p3 = Person(name, gender)
-print(f"Hello my name is {p3.get_name().upper()}")
-print(f"and beeing {p3.get_gender().lower()} is the best in world.")
+room1 = Room("Girl's Bathroom", "Female", 2)
+room1.add_person(p1)
+room1.add_person(p2)
+room1.add_person(p3)
+room1.add_person(p4)
+
+
+print(room1.people)
+print(room1.people[0].name)
+
 
 
 
