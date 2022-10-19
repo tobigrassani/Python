@@ -17,9 +17,9 @@ class Room:
     def add_person(self, person):
         if (len(self.people) < self.capacity) & (self.access == person.gender):     # filtering by capacity and gender
             self.people.append(person)
-            print(f">>>>>{person.name} approved to join {room1.name}")
+            print(f">>>>>{person.name} approved to join {self.name}")
             return True
-        print(f"{person.name} denied to join {room1.name}<<<<<")
+        print(f"{person.name} denied to join {self.name}<<<<<")
         return False
 
 
@@ -33,13 +33,13 @@ p7 = Person("John", "Male")
 p8 = Person("Alex", "Male")
 
 
-
 room1 = Room("Girl's Bathroom", "Female", 2)
 room2 = Room("Boy's Bathroom", "Male", 3)
 room1.add_person(p1)
 room1.add_person(p2)
 room1.add_person(p3)
 room1.add_person(p4)
+
 room2.add_person(p1)
 room2.add_person(p2)
 room2.add_person(p3)

@@ -58,7 +58,7 @@ def system():
         0. Exit
         """)
         option = int(input("Insert option: "))
-        while option < 0 or option > 4:
+        while option < 0 or option > 3:
             option = int(input("Insert a valid option: "))
         if option == 1:
             print(f"\nYour balance is ${total} dollars")
