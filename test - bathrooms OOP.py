@@ -35,19 +35,18 @@ p8 = Person("Alex", "Male")
 
 room1 = Room("Girl's Bathroom", "Female", 2)
 room2 = Room("Boy's Bathroom", "Male", 3)
-room1.add_person(p1)
-room1.add_person(p2)
-room1.add_person(p3)
-room1.add_person(p4)
+print(
+    room1.add_person(p1),
+    room1.add_person(p2),
+    room1.add_person(p3),
+    room1.add_person(p4))
+
 
 room2.add_person(p1)
 room2.add_person(p2)
 room2.add_person(p3)
 room2.add_person(p4)
 
-
-print(room1.people)
-print(room1.people[0].name)
 
 
 
