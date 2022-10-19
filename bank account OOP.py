@@ -15,7 +15,7 @@ class Person:
 
 
 class Account:
-    def __init__(self)
+    def __init__(self):
         self.balance = 0
         self.accounts = []
         print(">>> Hello!! Welcome to ATM <<<")
@@ -74,6 +74,7 @@ def main():
         opt = int(input("\nInsert option: "))
         if opt == 1:
             new_account = Account()
+            new_account.create_account()
             print("\nAccount Created Successfully")
             opt = True
         if opt == 2:
