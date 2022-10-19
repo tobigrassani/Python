@@ -1,8 +1,8 @@
 class Person:
-    def __init__(self, name, gender, y_birth):
+    def __init__(self, name, gender, id):
         self.name = name
         self.gender = gender
-        self.y_birth = y_birth
+        self.id = id
 
     def get_gender(self):
         return self.gender
@@ -10,9 +10,11 @@ class Person:
     def get_name(self):
         return self.name
 
-    def get_y_birth(self):
-        return self.y_birth
+    def get_id(self):
+        return self.id
 
 
-class Account:
-    
+class Account(Person):
+
+
+
