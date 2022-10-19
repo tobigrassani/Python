@@ -34,7 +34,6 @@ p8 = Person("Alex", "Male")
 
 
 
-
 room1 = Room("Girl's Bathroom", "Female", 2)
 room2 = Room("Boy's Bathroom", "Male", 3)
 room1.add_person(p1)
