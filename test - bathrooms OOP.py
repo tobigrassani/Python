@@ -31,6 +31,7 @@ p4 = Person("Alex", "Male")
 p5 = Person("Samantha", "Female")
 p6 = Person("Freddy", "Male")
 
+
 room1 = Room("Girl's Bathroom", "Female", 3)
 room2 = Room("Boy's Bathroom", "Male", 3)
 
