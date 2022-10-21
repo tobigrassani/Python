@@ -10,18 +10,27 @@ class Room:
         self.access = access
         self.capacity = capacity
         self.people = []
+        self.people_inside = 0
 
     def add_person(self, person):
         if (len(self.people) < self.capacity) & (self.access == person.gender):     # filtering by capacity and gender
             self.people.append(person)
+            self.people_inside += 1
+            print(f"{person.name} DELETED from {self.name} successfully.")
             return True
         return False
 
     def del_person(self, person):
-        self.people.remove(person)
+        if person in self.people:
+            self.people.remove(person)
+            self.people_inside -= 1
+            print(f"{person.name} ADDED to {self.name} successfully.")
+            return True
+        return False
 
     def show_people(self):
-        print(self.people)
+        print(f"There are {self.people_inside} inside {self.name}.")
+        print("LIST:", self.people)
 
 
 p1 = Person("Alissa", "Female")
@@ -47,12 +56,15 @@ room2.add_person(p2)
 room2.add_person(p3)
 room2.add_person(p4)
 
-print("Adding people")
 room1.show_people()
 room2.show_people()
-print("Removing people")
+
 room1.del_person(p1)
+room1.del_person(p2)
 room1.del_person(p3)
+room1.del_person(p4)
+room1.del_person(p5)
+
 
 room1.show_people()
 room2.show_people()
