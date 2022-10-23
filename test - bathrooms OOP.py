@@ -4,6 +4,13 @@ class Person:
         self.gender = gender
 
 
+class Building:
+    def __init__(self, name, address):
+        self.name = name
+        self.address = address
+        self.rooms = 0
+
+
 class Room:
     def __init__(self, name, access, capacity):
         self.name = name
@@ -68,6 +75,8 @@ room1.del_person(p5)
 
 room1.show_people()
 room2.show_people()
+
+
 
 
 
