@@ -81,13 +81,13 @@ class Graph:
 
 # Create a graph given in the above diagram
 
-n = int(input("Insert matrix size: "))
+n = int(input("Ingresar cantidad de vertices: "))
 A = []
 
 for i in range(n):
     row = []
     for j in range(n):
-        row.append(int(input(f"Insert [{i}][{j}] value: ")))
+        row.append(int(input(f"Arista [{i}-{j}]: ")))
     A.append(row)
 
 source = int(input("Ingresar Fuente: "))
