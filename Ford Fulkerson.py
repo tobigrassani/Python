@@ -13,10 +13,10 @@ class Graph:
         # Marca todos los vertices como no visitados
         visited = [False] * self.ROW
 
-        # Crea una lista para la BPA
+        # Crea una lista para el algoritmo BPA
         queue = []
 
-        # Marca el sumidero como visitado y lo coloca en la lista del BPA
+        # Marca el sumidero como visitado y lo coloca en la lista del algoritmo BPA
         queue.append(s)
         visited[s] = True
 
