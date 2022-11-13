@@ -48,7 +48,7 @@ class Graph:
     def FordFulkerson(self, source, sink):
 
         # This array is filled by BFS and to store path
-        parent = [-1] * (self.ROW)
+        parent = [-1] * self.ROW
 
         max_flow = 0  # There is no flow initially
 
@@ -81,16 +81,18 @@ class Graph:
 
 # Create a graph given in the above diagram
 
-graph = [[0, 16, 13, 0, 0, 0],
-         [0, 0, 130, 19, 0, 0],
-         [0, 34, 0, 0, 14, 0],
-         [0, 0, 93, 0, 0, 20],
-         [0, 0, 0, 7, 0, 43],
-         [0, 0, 0, 0, 0, 0]]
+n = int(input("Insert matrix size: "))
+A = []
 
-g = Graph(graph)
+for i in range(n):
+    row = []
+    for j in range(n):
+        row.append(int(input(f"Insert [{i}][{j}] value: ")))
+    A.append(row)
 
-source = 0
-sink = 5
+source = int(input("Ingresar Fuente: "))
+sink = int(input("Ingresar Sumidero: "))
 
-print("The maximum possible flow is %d " % g.FordFulkerson(source, sink))
+g = Graph(A)
+
+print(f"El flujo maximo desde la fuente '{source}' al sumidero '{sink}' es: %d " % g.FordFulkerson(source, sink))
