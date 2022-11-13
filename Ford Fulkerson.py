@@ -7,7 +7,7 @@ class Graph:
     """ Devuelve TRUE si existe un camino desde la fuente 's' hacia 
     el sumidero 't' en el grafo residual. Tambien llena parent[]
     para guardar el grafo."""
-    # Busqueda Por Amplitud - BPA
+    # Busqueda Por Amplitud para verificar si existe camino entre fuente y sumidero
     def BFS(self, s, t, parent):
 
         # Marca todos los vertices como no visitados
@@ -40,8 +40,7 @@ class Graph:
                     if index == t:
                         return True
 
-        # We didn't reach sink in BFS starting
-        # from source, so return false
+        # No existe camino entre la fuente y el sumidero, entonces return False
         return False
 
     # Returns the maximum flow from s to t in the given graph
@@ -79,11 +78,10 @@ class Graph:
         return max_flow
 
 
-# Create a graph given in the above diagram
-
 n = int(input("Ingresar cantidad de vertices: "))
 A = []
 
+print("\nAhora ingrese la matriz de adyacencia:")
 for i in range(n):
     row = []
     for j in range(n):
